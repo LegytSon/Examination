@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House</title>
+    <script src="aframe.min.js"></script>
+    <script src="extras.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="" id="" alt="">
+            <img src="" id="" alt="">
+            <a-asset-item src="./villa_de_plage/scene.gltf" id="villa"></a-asset-item>
+            
+        </a-assets>
+        <a-plane src="grass.jpg" position="-15 -10 10" scale="20 20" repeat="10 10" height="200" width="200" rotation="-90 0 0" ></a-plane>
+        <a-sky src="clear-sunny-sky.jpg"> </a-sky>
+        <!--dream house model-->
+        <a-entity gltf-model="#villa" position="0 0 0" scale="7 7 7"></a-entity>
+
+        <a-camera position="50 8 100"></a-camera>
+
+        <a-entity position="13 0 5" scale="1 1 1"></a-entity>
+
+
+
+        <!---->
+        <a-box color="black"
+               position="36.34712 40.16957 -0.32674"
+               height="0.2"
+               depth="100"
+               width="100"
+               scale="0.88 1 0.64"
+               opacity="0.90"
+        ></a-box>
+
+        <a-ocean width="150" depth="230" density="200" amplitude="1" amplitudeVariance="5" position="13 -0.2 71.50507" scale="0.2 0.2 0.2"></a-ocean>
+
+        <a-light type="ambient" intensity="0.3"></a-light>
+        <a-sphere radius="0.5" position="6.152 35.63556 22.366" material="" geometry="">
+            <a-light type="point" intensity="0.9" light=""></a-light>
+        </a-sphere>
+
+        <a-sphere radius="0.5" position="33.35085 35.35751 22.366" material="" geometry="">
+            <a-light type="point" intensity="0.9" light=""></a-light>
+        </a-sphere>
+        <a-sphere radius="0.5" position="32.57503 0 -53.69421" material="" geometry="">
+            <a-light type="point" intensity="0.9" light=""></a-light>
+        </a-sphere>
+        
+    </a-scene>
+</body>
+</html>
